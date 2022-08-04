@@ -153,3 +153,46 @@ ul li::before {
     content: '✓';
     color: orangered;
 }
+
+@media screen and (max-width:768px) {
+    .first-row,
+    .phones,
+    .menu {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        /* padding: 10px; */
+    }
+    .menu a {
+        color: darkblue;
+    }
+    .menu a:hover {
+        color: orangered;
+    }
+    .first-watch img {
+        padding-top: 80px;
+        width: 180px;
+    }
+    .first-watch h1 {
+        font-size: 20px;
+    }
+    .first-watch,
+    .second-watch {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .second-watch img {
+        width: 150px;
+    }
+    .second-watch h1 {
+        font-size: 20px;
+    }
+    .second-watch li {
+        font-size: 14px;
+    }
+    .second-watch ul {
+        padding-left: 0;
+        margin-right: 10px;
+    }
+}
